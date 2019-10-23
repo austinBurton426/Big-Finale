@@ -29,8 +29,7 @@
     }
     .slider {
       max-width: auto;
-      height: 800px;
-      margin: -640px auto;
+      height: auto;
       position: relative;
       z-index: -9;
     }

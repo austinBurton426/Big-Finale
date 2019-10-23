@@ -26,12 +26,12 @@ class Foodies extends Component {
     }
     render(){
         return (
-          <>
+          <div>
             <div className="indexBox">
             <div className='flexbox-row'>{this.state.Foodies}</div>
             </div>
             <NewFoodie reload={this.getFoodies} />
-          </>
+          </div>
         );
     }
 }

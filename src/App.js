@@ -66,9 +66,16 @@ class App extends React.Component {
   render() {
     return (
       <div>
+                <div className="slider">
+
+          <div className="slide1"></div>
+          <div className="slide2"></div>
+          <div className="slide3"></div>
+          <div className="slide4"></div>
+          <div className="slide5"></div>
         <div className="container">
+          <Foodies/>
          
-          <Foodies />
 
           <div>
             <form onSubmit={this.handleSubmit}>
@@ -92,12 +99,6 @@ class App extends React.Component {
             </form>
           </div>
         </div>
-        <div className="slider">
-          <div className="slide1"></div>
-          <div className="slide2"></div>
-          <div className="slide3"></div>
-          <div className="slide4"></div>
-          <div className="slide5"></div>
         </div>
       </div>
     );

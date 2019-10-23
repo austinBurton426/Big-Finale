@@ -8,7 +8,7 @@ class NewFoodie extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
+    console.log("state", this.state);
     fetch(`${FOODS_API}/foodie`, {
       method: "POST",
       headers: {
@@ -16,8 +16,11 @@ class NewFoodie extends Component {
       },
       body: JSON.stringify(this.state)
     })
-      .then(response => response.json())
-      .then(console.log)
+      .then(response => {
+        console.log("response", response)
+        return response.json()})
+      
+      .then(res => console.log("res", res))
       .then(() => this.props.reload())
       .catch(console.log);
   };
